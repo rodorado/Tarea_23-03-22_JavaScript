@@ -1,9 +1,4 @@
-alert("Un mensaje");
+alert("Hola soy fan de JavaScript");
 document.write("Hello World");
+document.write(3 + 5);
 
-let numero1 = 3;
-let numero2 = 5;
-
-let suma = numero1 + numero2;
-
-//console.log(3+5);
