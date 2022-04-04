@@ -1,10 +1,10 @@
 //TAREA 4-04-22
 //1. 6.- Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.
 
- let numero1 = parseFloat(prompt("Ingrese el primer número"));
+ /*let numero1 = parseFloat(prompt("Ingrese el primer número"));
    let numero2 = parseFloat(prompt("Ingrese el número 2"));
     
- console.log(`El número mayor ingresado es ${Math.max(numero1, numero2)}`);
+ console.log(`El número mayor ingresado es ${Math.max(numero1, numero2)}`);*/
 
  //--------------------------------------------------------------------------------------------------------------
 
@@ -32,12 +32,28 @@ if (div === 0) {
 
 //9.- Escribe un programa que pida una frase y escriba las vocales que aparecen
 
-/*let frase = "Cuaderno";
-let vocales = frase.charAt(1, 2);
-let vocales1 = frase.charAt(4,7);
+let frase = prompt("Ingrese una frase");
+console.log(`Las vocales que aparecen en la frase: ${frase}`);
 
-console.log(vocales, vocales1);
-console.log(`La frase ${frase} tiene ${vocales.length + vocales1.length}  vocales`); //Este punto no sé como hacerlo :(*/
+if(frase.includes("a")){
+  console.log("a");
+}
+if(frase.includes("e")){
+  console.log("e");
+}
+
+if(frase.includes("i")){
+  console.log("i");
+}
+
+if(frase.includes("o")){
+  console.log("o");
+}
+
+if(frase.includes("u")){
+  console.log("u");
+}
+
 
 //-------------------------------------------------------------------------------------------------------------------
 
