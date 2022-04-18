@@ -4,17 +4,10 @@ Realiza el ejercicio con prompt (mensaje) y haz uso de los template strings.
  */
 
 /*let nombre = prompt("Ingrese el nombre");
-let edad = parseInt(prompt("Ingrese la edad"));
-//vecesSumar = 0;
-totalEdad = edad +1;
+let edad = Number(prompt("Ingrese la edad"));
 
-while (totalEdad > 50) {
 
-    totalEdad +=1;
-
-}
-
-console.log(`Hola ${nombre}, tienes ${edad} y el año que viene tendrás ${totalEdad}`);*/
+console.log(`Hola ${nombre}, tienes ${edad} y el año que viene tendrás ${edad + 1} años.`);*/
 
 //----------------------------------------------------------------------
 
@@ -145,15 +138,16 @@ function ordenarLenguajes() {
 */
 
 let lenguajes = ["javascript", "python", "c++", "c#", "java", ".net", "pascal", "reactor", "mysql", "c"];
-let mayus = lenguajes ["javascript", "python", "c++", "c#", "java", ".net", "pascal", "reactor", "mysql", "c"];
 
 function ordenarLenguajes(){
-   console.log(lenguajes.sort());
+ 
+   let lenguajesOrdenados = [];
+   console.log(lenguajesOrdenados);
 
-   for (let i = 0; i > 10; i++) {
-       console.log(`${i} - ${lenguajes}`);
-   }
+  lenguajesOrdenados = lenguajes.slice(0);
+  lenguajesOrdenados.sort().map(function(lenguaje, index){
+    console.log(`${index + 1} - ${lenguaje.toUpperCase()}`);
+  });
 
 }
 
-console.log(ordenarLenguajes(lenguajes));
